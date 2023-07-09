@@ -32,7 +32,7 @@ const Login = (props) => {
  
   const  openNotification = () => {
     api.open({
-      message: 'Notification Title',
+      message: 'SORRY!',
       description:
         'UnFortunatly Manual login is not working use Google Authentication.',
       icon: (
@@ -145,6 +145,8 @@ const Login = (props) => {
               </div>
             </div>
           </div>
+          <br/>
+          Don’t have an account?<a href="#" >{" "}Register here</a>
           </div>
         </div>
       </div>
