@@ -32,7 +32,7 @@ const BootomGraphs = () => {
       }, [mon]);
     
       const calcpoint = async () => {
-        const respons = await fetch(` http://localhost:3000/${mon}`, {
+        const respons = await fetch(`https://board-g5rs.onrender.com/${mon}`, {
             method: "GET",
         });
         
