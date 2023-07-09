@@ -1,0 +1,93 @@
+.main__section{
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    column-gap: 1rem;
+    height:100vh
+}
+
+.main__right{
+   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #F5F5F5;
+}
+.main__left{
+    background-color: #02020E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section.is-fullheight{
+  border: 5px solid white;
+  background-color: #fff;
+  padding: 1rem;
+}
+.home__title{
+    color: #fff;
+}
+
+.login-form {
+    max-width: 300px;
+  }
+  .login-form-forgot {
+    float: right;
+  }
+  .ant-col-rtl .login-form-forgot {
+    float: left;
+  }
+  .login-form-button {
+    width: 100%;
+  }
+ 
+
+.control{
+  margin-top:1rem;
+  margin-bottom: 0.5rem;
+}
+
+.input{
+  padding:1rem;
+}
+.help{
+  color: red;
+}
+.button{
+  margin-top: 2rem;
+  width:15rem
+}
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    
+  }
+  
+  /* For medium devices */
+/*   @media screen and (max-width: 768px) {
+   
+  }
+   */
+  @media screen and (max-width: 576px) {
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 768px) {
+    .main__section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto;
+     
+    }
+    .main__left{
+        grid-row: 1;
+    }
+    .main__right{
+        grid-row: 2;
+    }
+    .home__title{
+        font-size:var(--h1-font-size)
+    }
+  }
+  

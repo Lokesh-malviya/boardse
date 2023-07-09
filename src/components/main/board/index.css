@@ -1,0 +1,130 @@
+.board{
+   height: 100vh;
+}
+.homes__title{
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   margin-left: 3rem;
+   color: #fff;
+}
+.work__container{
+   grid-template-columns: repeat(4,max-content);
+   gap:1rem;
+   justify-content: center;
+}
+.work__card{
+   background-color: var(--container-color);  
+   border: 1px solid white;
+   padding : 1.25rem; 
+   border-radius: 1rem;
+   width: 285px;
+   height: 135px;
+   background-color: #fff;
+   text-align: start;
+
+  }
+.work__title{
+   font-size: var(--normal-font-size);
+   font-weight:var(--font-medium);
+   margin-bottom:var(--mb-0-5);
+}
+.work__button{
+   
+   font-size:25px;
+   display : flex;
+   align-items: center;
+   column-gap: 0.25rem;
+}
+.icons{
+   display: flex;
+   flex-direction: row-reverse;
+}
+.home__title_black{
+   color: black;
+}
+/* .lefty{
+   display: flex;
+   justify-content: flex-start;
+   
+   margin-left:5px
+} */
+
+.search{
+   margin-top: 1rem;
+}
+
+.options{
+   transform: scaleY(-2)
+}
+
+/* ---------------Break points-------------- */
+@media screen and (max-width: 1262px) {
+   .work__container{
+       grid-template-columns: repeat(3,max-content);
+   }
+   .work__card{
+       padding: 1rem;
+   }
+   .work__img{
+       margin-bottom:0.75rem;
+   }
+   .work__title{
+       margin-bottom : 0.25rem;
+
+   }
+   .home__title_black{
+      font-size: var(--h2-font-size);
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .work__container{
+       grid-template-columns: repeat(2,max-content);
+   }
+   .work__card{
+       padding: 1rem;
+   }
+   .work__img{
+       margin-bottom:0.75rem;
+   }
+   .work__title{
+       margin-bottom : 0.25rem;
+
+   }
+   .home__title_black{
+      font-size: var(--h2-font-size);
+   }
+}
+
+/* For medium devices */
+@media screen and (max-width: 668px) {
+.work__container{
+   grid-template-columns: max-content;
+}
+.home__title_black{
+   font-size: var(--h3-font-size);
+}
+}
+
+@media screen and (max-width: 576px) {
+.work__container{
+grid-template-columns: 1fr;
+}
+.work__img{
+width: 100%;
+height: 265px;
+}
+
+
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+.work__item{
+   font-size:var(--small-font-size);
+}
+.work__filters{
+   column-gap: 0.25rem;
+}
+
+}

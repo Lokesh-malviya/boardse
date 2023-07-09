@@ -1,0 +1,97 @@
+.ris{
+    margin-top: 2rem;
+    
+}
+.overall{
+    border: 5px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #fff;
+}
+.head{
+    display: flex;
+    align-items: start;
+}
+.piecharts{
+    min-width:30vw;
+    margin-top: 0.3rem;
+}
+.content__chart{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+    margin-top: 2rem;
+    
+  
+}
+.heading{
+    margin-top:1rem;
+}
+
+.timeline{
+    
+    border: 5px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    
+
+}
+.piecharts{
+    border: 5px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+}
+.work__cards{
+    background-color: var(--container-color);  
+    padding : 1.25rem; 
+    margin-top: 1rem;
+    height: 135px;
+    text-align: start;
+ 
+   }
+   .work__buttons{
+    color:var(--text-color);
+    font-size:var(--small-font-size);
+  
+    column-gap: 0.25rem;
+ }
+
+ 
+/* ---------------Break points-------------- */
+@media screen and (max-width: 1262px) {
+    .content__chart{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        
+    }
+   
+ }
+ 
+ @media screen and (max-width: 992px) {
+    
+ }
+ 
+ /* For medium devices */
+ @media screen and (max-width: 700px) {
+
+ }
+ 
+ @media screen and (max-width: 576px) {
+
+ 
+ 
+ }
+ 
+ /* For small devices */
+ @media screen and (max-width: 400px) {
+    .piecharts{
+        min-width:75vw;
+    }
+    .right__graph{
+        grid-template-columns: repeat(1,max-content); 
+    }
+ 
+ }
